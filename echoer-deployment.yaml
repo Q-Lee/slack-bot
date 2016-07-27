@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: echoer
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: echoer
+    spec:
+      containers:
+      - name: c
+        image: busybox
+        command: ["sh", "-c", "while [[ 1 ]] ; do echo hello from $(hostname); sleep 1; done"]
