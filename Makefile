@@ -14,7 +14,7 @@
 #
 
 OUT_DIR = build
-PACKAGE = k8s.io/contrib/kubelet-to-gcm
+PACKAGE = q-lee/slack-bot
 PREFIX = gcr.io/qlee-experiment
 TAG = 1.0
 
